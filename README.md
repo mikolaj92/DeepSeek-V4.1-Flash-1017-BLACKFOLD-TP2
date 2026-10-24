@@ -13,6 +13,10 @@ what to expect for your use, and what it takes to get these numbers on your own 
 This is the TP2 recipe: how to run BLACKFOLD on two GB10 nodes with TensorFold's native engine, the three engine
 patches that make it fast, the two-rail network setup, and every measurement. The weights live on Hugging Face:
 
+> **TensorFold upgrade status (experimental branch):** upstream `v1.1.3` is newer, but it does not yet serve
+> DeepSeek checkpoints from a release build. Its DeepSeek CUDA whole-model gate is still open. The current BLACKFOLD
+> engine pin remains necessary for a runnable deployment; see [the compatibility check](docs/TENSORFOLD-UPGRADE-1.1.3.md).
+
 **Model:** [BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2](https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2) (gated, responsible-use terms)
 
 ![What BLACKFOLD changes](assets/how-it-works.png)
